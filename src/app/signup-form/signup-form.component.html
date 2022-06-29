@@ -1,33 +1,41 @@
-<form >
 
-    <label for="username">User Name </label>
-        <input type="text" name="username">
+
+    <label for="username">User name </label>
+        <input type="text" [formControl]="username">
     <br>
 
     <label for="email">Email </label>
-        <input type="email" name="email" >
+        <input type="email" [formControl]="useremail" >
     <br>
 
-    <label for="password">Password </label>
-        <input type="password" name="password" >
+    <label for="password">Mot de passe</label>
+        <input type="password" [formControl]="userpassword" >
     <br>
 
     <div class="address">
         <label for="streetName">Nom de rue </label>
-        <input type="text" name="streetName">
+        <input type="text" [formControl]="streetName">
         <br>
 
         <label for="zipCode">Code postal </label>
-        <input type="text" name="zipCode">
+        <input type="text" [formControl]="zipCode">
         <br>
 
         <label for="city">Ville </label>
-        <input type="text" name="city">
+        <input type="text" [formControl]="city">
         <br>
     </div>
     <br>
 
-    <button type="submit">Inscription</button>
+    <button (click)="createNewUser()" >Inscription</button>
 
-</form>
 
+
+<!--
+<p> User name {{username.value}}</p>
+<p> Email {{useremail.value}}</p>
+<p> Password {{userpassword.value}}</p>
+<p> Nom de rue {{streetName.value}}</p>
+<p> Code postal {{zipCode.value}}</p>
+<p> Ville {{city.value}}</p>
+-->

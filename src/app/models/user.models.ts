@@ -1,7 +1,7 @@
 export class User{
-    username:string;
-    email:string;
-    password:string;
+    username:string | null;
+    email:string | null;
+    password:string | null;
 
     constructor(username:string, email:string, password:string){
         this.username = username;

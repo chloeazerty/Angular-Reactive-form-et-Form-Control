@@ -10,7 +10,7 @@ export class UserComponent {
   username = new FormControl('');
 
   changeUsername() {
-    this.username.setValue('kitten69');
+    this.username.setValue('Toto');
   }
 
   
