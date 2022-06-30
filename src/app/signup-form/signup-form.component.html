@@ -27,15 +27,14 @@
     </div>
     <br>
 
-    <button (click)="createNewUser()" >Inscription</button>
+    <button (click)="createNewUser()">Inscription</button>
 
-
-
-<!--
+    
+<div *ngIf="element == true">
 <p> User name {{username.value}}</p>
 <p> Email {{useremail.value}}</p>
 <p> Password {{userpassword.value}}</p>
 <p> Nom de rue {{streetName.value}}</p>
 <p> Code postal {{zipCode.value}}</p>
 <p> Ville {{city.value}}</p>
--->
+</div>

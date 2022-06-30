@@ -15,8 +15,12 @@ export class SignupFormComponent {
     zipCode = new FormControl('');
     city = new FormControl('');
 
-   createNewUser():void{
+  
+  user = new User("" , "", "", "", 0, "");
+  element=false;
+  createNewUser():void{
   console.log(this.username.value, this.useremail.value, this.userpassword.value, this.streetName.value, this.zipCode.value, this.city.value);
+  this.element = true;
   }
 
   };
