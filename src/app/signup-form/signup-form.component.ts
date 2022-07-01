@@ -12,15 +12,21 @@ export class SignupFormComponent {
     useremail = new FormControl('');
     userpassword = new FormControl('');
     streetName =  new FormControl('');
-    zipCode = new FormControl('');
+    zipCode = new FormControl(0);
     city = new FormControl('');
 
   
   user = new User("" , "", "", "", 0, "");
   element=false;
   createNewUser():void{
-  console.log(this.username.value, this.useremail.value, this.userpassword.value, this.streetName.value, this.zipCode.value, this.city.value);
-  this.element = true;
+ this.user.username = this.username.value, 
+ this.user.email = this.useremail.value, 
+ this.user.password = this.userpassword.value, 
+ this.user.streetName = this.streetName.value, 
+ this.user.zipCode = this.zipCode.value, 
+ this.user.city = this.city.value;
+
+ this.element = true;
   }
 
   };
